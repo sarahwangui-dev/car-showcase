@@ -60,7 +60,7 @@ const SearchManufacturer = ({ selected, setSelected }: SearchManufacturerProps) 
                   value={query}
                   className='search-manufacturer__option'
                 >
-                  Create "{query}"
+                
                 </Combobox.Option>
               ) : (
                 filteredManufacturers.map((item) => (
@@ -68,7 +68,7 @@ const SearchManufacturer = ({ selected, setSelected }: SearchManufacturerProps) 
                     key={item}
                     className={({ active }) =>
                       `relative search-manufacturer__option ${
-                        active ? "bg-primary-blue text-white" : "text-gray-900"
+                       active ? "text-white" : "text-primary-purple" }"text-gray-900"
                       }`
                     }
                     value={item}
